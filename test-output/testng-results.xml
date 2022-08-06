@@ -2,27 +2,43 @@
 <testng-results ignored="0" total="5" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-06T19:48:18 IST" name="Suite" finished-at="2022-08-06T19:48:18 IST" duration-ms="566">
+  <suite started-at="2022-08-06T21:31:19 IST" name="Suite" finished-at="2022-08-06T21:31:20 IST" duration-ms="726">
     <groups>
     </groups>
-    <test started-at="2022-08-06T19:48:18 IST" name="Test" finished-at="2022-08-06T19:48:18 IST" duration-ms="566">
+    <test started-at="2022-08-06T21:31:19 IST" name="FirefoxTest" finished-at="2022-08-06T21:31:20 IST" duration-ms="726">
       <class name="com.saucedemo.testClass.TC001_VerifyLoginFunctionality">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC001_VerifyLoginFunctionality@4d5b6aac]" started-at="2022-08-06T19:48:18 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498494" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC001_VerifyLoginFunctionality@429bffaa]" started-at="2022-08-06T21:31:20 IST" name="setUp" finished-at="2022-08-06T21:31:20 IST" duration-ms="46" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -49,26 +65,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginfunctaionality()[pri:0, instance:com.saucedemo.testClass.TC001_VerifyLoginFunctionality@4d5b6aac]" started-at="2022-08-06T19:48:18 IST" name="loginfunctaionality" finished-at="2022-08-06T19:48:18 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="loginfunctaionality()[pri:0, instance:com.saucedemo.testClass.TC001_VerifyLoginFunctionality@429bffaa]" started-at="2022-08-06T21:31:20 IST" name="loginfunctaionality" finished-at="2022-08-06T21:31:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -95,32 +120,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginfunctaionality -->
-        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC001_VerifyLoginFunctionality@4d5b6aac]" started-at="2022-08-06T19:48:18 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498534" status="SKIP">
+        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC001_VerifyLoginFunctionality@429bffaa]" started-at="2022-08-06T21:31:20 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659801680607" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
       </class> <!-- com.saucedemo.testClass.TC001_VerifyLoginFunctionality -->
       <class name="com.saucedemo.testClass.TC004_VerifyMultiProduct">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC004_VerifyMultiProduct@a3d8174]" started-at="2022-08-06T19:48:18 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498165" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC004_VerifyMultiProduct@272ed83b]" started-at="2022-08-06T21:31:20 IST" name="setUp" finished-at="2022-08-06T21:31:20 IST" duration-ms="340" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -147,26 +188,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Multiproduct()[pri:0, instance:com.saucedemo.testClass.TC004_VerifyMultiProduct@a3d8174]" started-at="2022-08-06T19:48:18 IST" name="Multiproduct" finished-at="2022-08-06T19:48:18 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="Multiproduct()[pri:0, instance:com.saucedemo.testClass.TC004_VerifyMultiProduct@272ed83b]" started-at="2022-08-06T21:31:20 IST" name="Multiproduct" finished-at="2022-08-06T21:31:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -193,32 +243,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Multiproduct -->
-        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC004_VerifyMultiProduct@a3d8174]" started-at="2022-08-06T19:48:18 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498224" status="SKIP">
+        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC004_VerifyMultiProduct@272ed83b]" started-at="2022-08-06T21:31:20 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659801680389" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
       </class> <!-- com.saucedemo.testClass.TC004_VerifyMultiProduct -->
       <class name="com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality@49c7b90e]" started-at="2022-08-06T19:48:18 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498302" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality@3e84448c]" started-at="2022-08-06T21:31:20 IST" name="setUp" finished-at="2022-08-06T21:31:20 IST" duration-ms="22" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -245,26 +311,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logoutfunctaionality()[pri:0, instance:com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality@49c7b90e]" started-at="2022-08-06T19:48:18 IST" name="logoutfunctaionality" finished-at="2022-08-06T19:48:18 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="logoutfunctaionality()[pri:0, instance:com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality@3e84448c]" started-at="2022-08-06T21:31:20 IST" name="logoutfunctaionality" finished-at="2022-08-06T21:31:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -291,32 +366,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutfunctaionality -->
-        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality@49c7b90e]" started-at="2022-08-06T19:48:18 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498419" status="SKIP">
+        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality@3e84448c]" started-at="2022-08-06T21:31:20 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659801680452" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
       </class> <!-- com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality -->
       <class name="com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality@10d307f1]" started-at="2022-08-06T19:48:18 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498442" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality@4a7f959b]" started-at="2022-08-06T21:31:20 IST" name="setUp" finished-at="2022-08-06T21:31:20 IST" duration-ms="23" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -343,26 +434,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddtoCart()[pri:0, instance:com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality@10d307f1]" started-at="2022-08-06T19:48:18 IST" name="AddtoCart" finished-at="2022-08-06T19:48:18 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="AddtoCart()[pri:0, instance:com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality@4a7f959b]" started-at="2022-08-06T21:31:20 IST" name="AddtoCart" finished-at="2022-08-06T21:31:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -389,32 +489,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddtoCart -->
-        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality@10d307f1]" started-at="2022-08-06T19:48:18 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498468" status="SKIP">
+        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality@4a7f959b]" started-at="2022-08-06T21:31:20 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659801680532" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
       </class> <!-- com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality -->
       <class name="com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality@3e84448c]" started-at="2022-08-06T19:48:18 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498543" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality@5403f35f]" started-at="2022-08-06T21:31:20 IST" name="setUp" finished-at="2022-08-06T21:31:20 IST" duration-ms="26" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -441,26 +557,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="BillingAndOrderFunctionality()[pri:0, instance:com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality@3e84448c]" started-at="2022-08-06T19:48:18 IST" name="BillingAndOrderFunctionality" finished-at="2022-08-06T19:48:18 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="BillingAndOrderFunctionality()[pri:0, instance:com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality@5403f35f]" started-at="2022-08-06T21:31:20 IST" name="BillingAndOrderFunctionality" finished-at="2022-08-06T21:31:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml]]>
+              <![CDATA[The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\ADMIN\eclipse-workspace\SauceDemo_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\ADMIN\Downloads\geckodriver-v0.31.0-linux32\geckodriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.saucedemo.testClass.TestBaseClass.setUp(TestBaseClass.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -487,15 +612,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BillingAndOrderFunctionality -->
-        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality@3e84448c]" started-at="2022-08-06T19:48:18 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659795498567" status="SKIP">
+        <test-method is-config="true" signature="teardownMethod()[pri:0, instance:com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality@5403f35f]" started-at="2022-08-06T21:31:20 IST" name="teardownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659801680646" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
       </class> <!-- com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality -->
-    </test> <!-- Test -->
+    </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->
 </testng-results>

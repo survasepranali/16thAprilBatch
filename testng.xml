@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="FirefoxTest">
+  <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="com.saucedemo.testClass.TC004_VerifyMultiProduct"/>
+      <class name="com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality"/>
+      <class name="com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality"/>
+      <class name="com.saucedemo.testClass.TC001_VerifyLoginFunctionality"/>
+      <class name="com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test thread-count="5" name="ChromeTest">
+  <parameter name="browserName" value="chrome"></parameter>
     <classes>
       <class name="com.saucedemo.testClass.TC004_VerifyMultiProduct"/>
       <class name="com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality"/>

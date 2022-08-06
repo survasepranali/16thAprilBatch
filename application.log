@@ -1,0 +1,53 @@
+2022-08-06 21:20:04,231  INFO [main] SauceDemo_Project:48 - Browser is open
+2022-08-06 21:20:15,726  INFO [main] SauceDemo_Project:51 - URL open
+2022-08-06 21:20:16,139  INFO [main] SauceDemo_Project:53 - Browser gets maximize
+2022-08-06 21:20:16,720  INFO [main] SauceDemo_Project:56 - Applying the waits
+2022-08-06 21:20:18,795  INFO [main] SauceDemo_Project:62 - pass the username
+2022-08-06 21:20:19,282  INFO [main] SauceDemo_Project:64 - pass the password
+2022-08-06 21:20:20,058  INFO [main] SauceDemo_Project:66 - click the login
+2022-08-06 21:21:11,420  INFO [main] SauceDemo_Project:48 - Browser is open
+2022-08-06 21:24:02,923  INFO [main] SauceDemo_Project:51 - URL open
+2022-08-06 21:24:03,145  INFO [main] SauceDemo_Project:53 - Browser gets maximize
+2022-08-06 21:24:03,591  INFO [main] SauceDemo_Project:56 - Applying the waits
+2022-08-06 21:24:03,848  INFO [main] SauceDemo_Project:62 - pass the username
+2022-08-06 21:24:04,085  INFO [main] SauceDemo_Project:64 - pass the password
+2022-08-06 21:24:04,536  INFO [main] SauceDemo_Project:66 - click the login
+2022-08-06 21:24:05,501  INFO [main] SauceDemo_Project:42 - Click the setting
+2022-08-06 21:24:05,829  INFO [main] SauceDemo_Project:44 - Click the logout
+2022-08-06 21:24:37,939  INFO [main] SauceDemo_Project:48 - Browser is open
+2022-08-06 21:24:46,295  INFO [main] SauceDemo_Project:51 - URL open
+2022-08-06 21:24:46,627  INFO [main] SauceDemo_Project:53 - Browser gets maximize
+2022-08-06 21:24:46,955  INFO [main] SauceDemo_Project:56 - Applying the waits
+2022-08-06 21:24:47,308  INFO [main] SauceDemo_Project:62 - pass the username
+2022-08-06 21:24:47,547  INFO [main] SauceDemo_Project:64 - pass the password
+2022-08-06 21:24:47,879  INFO [main] SauceDemo_Project:66 - click the login
+2022-08-06 21:24:49,275  INFO [main] SauceDemo_Project:46 - add bag
+2022-08-06 21:24:49,454  INFO [main] SauceDemo_Project:48 - add bike
+2022-08-06 21:24:49,555  INFO [main] SauceDemo_Project:51 - 2
+2022-08-06 21:24:50,064  INFO [main] SauceDemo_Project:64 - check cart
+2022-08-06 21:24:50,236  INFO [main] SauceDemo_Project:67 - remove bag
+2022-08-06 21:26:21,157  INFO [main] SauceDemo_Project:48 - Browser is open
+2022-08-06 21:26:42,823  INFO [main] SauceDemo_Project:51 - URL open
+2022-08-06 21:26:43,014  INFO [main] SauceDemo_Project:53 - Browser gets maximize
+2022-08-06 21:26:43,363  INFO [main] SauceDemo_Project:56 - Applying the waits
+2022-08-06 21:26:43,660  INFO [main] SauceDemo_Project:62 - pass the username
+2022-08-06 21:26:43,957  INFO [main] SauceDemo_Project:64 - pass the password
+2022-08-06 21:26:44,373  INFO [main] SauceDemo_Project:66 - click the login
+2022-08-06 21:28:18,347  INFO [main] SauceDemo_Project:48 - Browser is open
+2022-08-06 21:28:43,645  INFO [main] SauceDemo_Project:51 - URL open
+2022-08-06 21:28:43,860  INFO [main] SauceDemo_Project:53 - Browser gets maximize
+2022-08-06 21:28:44,227  INFO [main] SauceDemo_Project:56 - Applying the waits
+2022-08-06 21:28:44,609  INFO [main] SauceDemo_Project:62 - pass the username
+2022-08-06 21:28:44,987  INFO [main] SauceDemo_Project:64 - pass the password
+2022-08-06 21:28:45,658  INFO [main] SauceDemo_Project:66 - click the login
+2022-08-06 21:28:47,034  INFO [main] SauceDemo_Project:50 - add bag
+2022-08-06 21:28:47,325  INFO [main] SauceDemo_Project:52 - add bike
+2022-08-06 21:28:47,700  INFO [main] SauceDemo_Project:54 - check cart
+2022-08-06 21:28:47,953  INFO [main] SauceDemo_Project:56 - remove bag
+2022-08-06 21:28:48,534  INFO [main] SauceDemo_Project:67 - Click on checkout
+2022-08-06 21:28:48,901  INFO [main] SauceDemo_Project:69 - Pass the firstname
+2022-08-06 21:28:49,223  INFO [main] SauceDemo_Project:71 - Pass the lastname
+2022-08-06 21:28:49,478  INFO [main] SauceDemo_Project:73 - Pass the code
+2022-08-06 21:28:50,048  INFO [main] SauceDemo_Project:76 - continue to shopping
+2022-08-06 21:28:50,391  INFO [main] SauceDemo_Project:86 - THANK YOU FOR YOUR ORDER
+2022-08-06 21:28:50,835  INFO [main] SauceDemo_Project:105 - back to home

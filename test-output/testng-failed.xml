@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browserName" value="firefox"/>
     <classes>
-      <class name="com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality">
-        <methods>
-          <include name="setUp"/>
-          <include name="BillingAndOrderFunctionality"/>
-          <include name="teardownMethod"/>
-        </methods>
-      </class> <!-- com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality -->
-      <class name="com.saucedemo.testClass.TC004_VerifyMultiProduct">
+      <class name="com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality">
         <methods>
           <include name="setUp"/>
           <include name="teardownMethod"/>
-          <include name="Multiproduct"/>
+          <include name="AddtoCart"/>
         </methods>
-      </class> <!-- com.saucedemo.testClass.TC004_VerifyMultiProduct -->
+      </class> <!-- com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality -->
       <class name="com.saucedemo.testClass.TC002_VerifyLogoutFunctaionality">
         <methods>
           <include name="setUp"/>
@@ -31,13 +25,20 @@
           <include name="loginfunctaionality"/>
         </methods>
       </class> <!-- com.saucedemo.testClass.TC001_VerifyLoginFunctionality -->
-      <class name="com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality">
+      <class name="com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="BillingAndOrderFunctionality"/>
+          <include name="teardownMethod"/>
+        </methods>
+      </class> <!-- com.saucedemo.testClass.TC006_VerifyBillingAndOrderFunctionality -->
+      <class name="com.saucedemo.testClass.TC004_VerifyMultiProduct">
         <methods>
           <include name="setUp"/>
           <include name="teardownMethod"/>
-          <include name="AddtoCart"/>
+          <include name="Multiproduct"/>
         </methods>
-      </class> <!-- com.saucedemo.testClass.TC003_VerifyAddtocartFunctionality -->
+      </class> <!-- com.saucedemo.testClass.TC004_VerifyMultiProduct -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
